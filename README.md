@@ -17,7 +17,7 @@ Utilized an Embedding layer to convert integer sequences into dense vectors of f
 This layer helps in capturing the semantic meaning of words by representing them in a high-dimensional space.
 ### LSTM Layer:
 
-Implemented an LSTM (Long Short-Term Memory) layer to handle the sequential nature of the text data.
+Implemented Bidirectional LSTM (Long Short-Term Memory) layer to handle the sequential nature of the text data.
 LSTM is effective in learning long-term dependencies, which is crucial for predicting the next word based on previous words in a sentence.
 ### Dense Layer:
 
@@ -25,7 +25,7 @@ Added a Dense layer with a softmax activation function to output the probability
 ## Model Training
 ### Compilation:
 
-Compiled the model using the Adam optimizer and categorical cross-entropy loss function.
+Compiled the model using the Adam optimizer and sparse_categorical cross-entropy loss function.
 ### Metrics used: Accuracy
 ## Training:
 
